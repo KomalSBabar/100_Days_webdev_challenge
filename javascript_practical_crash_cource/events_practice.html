@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script language="javascript" type="text/javascript">
+        function MouseOver(){
+            // then as i keep my cursor on image it will update to this image specified bellow
+            document.images["img1"].src ="./img/img1.png"
+        }
+        function MouseOut(){
+            // then as i remove cursor from image then it will update to this image specified bellow
+            document.images["img1"].src="./img/img2.png"
+        }
+        function load(){
+            // as body part load first it will show this image
+            document.images["img1"].src="./img/img2.png"
+        }
+    </script>
+</head>
+<body onload="load()">
+    <img name="img1" onmouseover="MouseOver()" onmouseout="MouseOut()">
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Practice</title>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+        var arr = new Array(92,53,46,8,9,67);
+        var i,j,temp,k;
+
+      document.write("<br/> <br/> Before Sort....<br/>");
+      for ( i = 0; i < 6; i++) {
+        document.write( arr[i] + "<br/>");
+        
+      }
+
+    //   ascending order 
+      for ( i = 0; i < 6; i++) {
+       for ( j = 0; j< 5 ; j++ ){
+            if(arr[j] > arr[j + 1])
+            {
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+       }
+
+      }
+
+      document.write("<br/> <br/> After Sort in ascending order ....<br/>")
+        for(i=0 ; i<6 ; i++)
+        {
+            document.write(arr[i] + "</br>");
+        }
+
+        for(i = 0; i < 6; i++){
+            for(j = 0; j < 5 ; j++ ){
+                if(arr[j] <  arr[j + 1])
+                {
+                    temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+
+        document.write("<br/> <br/> After Sort in descending order ..... <br/>")
+        for(i=0 ; i<6 ; i++)
+        {
+            document.write(arr[i] + "</br>");
+        }
+
+
+
+
+    </script>
+</body>
+</html>

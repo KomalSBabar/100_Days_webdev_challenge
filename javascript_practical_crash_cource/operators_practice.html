@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators Practical</title>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+
+        var num1 = 40,num2 = 10 ;
+        var choice = prompt("select your choice    1:Arithmetic Operators" +
+                                                  "2 : Comparison Operatos " +
+                                                  "3 : Logical Operators " +
+                                                  "4 : Bitwise Operators "  +
+                                                  "5 : Ternary Operator","enter");
+
+        choice = parseInt(choice);
+
+       
+
+        switch (choice) {
+            case 1: 
+              document.write("Arithmetic Operators" + "</br>" );
+              document.write("Addition  :  ", num1 + num2  + "</br>" )
+              document.write("Subtraction : " , num1 - num2 + "</br>")
+              document.write("Multiplication : " , num1 * num2 + "</br>")
+              document.write("Modulus : " , num1 % num2 + "</br>")
+              document.write("Division : " , num1 / num2 + "</br>")
+                break;
+        
+            case 2: 
+            document.write("Comparison Operators" + "</br>" );
+            document.write("Equality Operator :  ", num1 == num2  + "</br>" )  //Compares the equality of two operators
+            document.write("Inequality Operator :  ", num1 != num2  + "</br>" ) //Compares inequality of two operators
+            document.write("Strict Equality Operator :  ", num1 === num2  + "</br>" ) //Compares both value and type of the operand
+            document.write("Strict Ienquality Operator :  ", num1 !== num2  + "</br>" ) //Compares inequality with type
+            document.write("Greater than Operator :  ", num1 > num2  + "</br>" ) //Checks if the left operator is greater than the right operator
+            document.write("Greater than or equal Operator :  ", num1 >= num2  + "</br>" ) //Checks if the left operator is greater than or equal to the right operator
+            document.write("Less than Operator :  ", num1 < num2  + "</br>" ) //Checks if the left operator is smaller than the right operator
+            document.write("Less than or equal Operator :  ", num1 <= num2  + "</br>" ) //Checks if the left operator is smaller than or equal to the right operator
+            document.write(" equality Operator :  ", num1 == num2  + "</br>" ) //This operator is used to compare the equality of two operands. If equal then the condition is true otherwise false.
+            break;
+
+            case 3:
+            document.write("Logical Operators" + "</br>" );
+            document.write("Not Operator :  ", !num1  + "</br>" )  
+            document.write("And Operator :  ", num1 && num2  + "</br>" )  
+            document.write("OR Operator :  ", num1 || num2  + "</br>" )  
+            break;
+            
+            case 4:
+            document.write("Bitwise Operators")
+            document.write("And Operator :  ", num1 & num2  + "</br>" )  
+            document.write("OR Operator :  ", num1 | num2  + "</br>" )  
+            document.write("XOR Operator :  ", num1 ^ num2  + "</br>" )  
+            document.write("NOT Operator :  ",  ~ num2  + "</br>" )  
+            document.write("Zero fill left Shift :  ", num1 << num2  + "</br>" )  
+            document.write("Signed right Shift :  ", num1 >> num2  + "</br>" )  
+            document.write("Zero fill right Shift :  ", num1 >>> num2  + "</br>" )  
+            break;
+
+            case 5:
+            document.write("Ternary Operator"  + "</br>")
+            var msg = ( num1 == 40)?"no is 40" : "not valid value"
+            document.write(msg);
+            break;
+
+            default:
+            document.write("you have selected wrong option");
+
+        
+            break;
+        }
+
+    </script>
+</body>
+</html>

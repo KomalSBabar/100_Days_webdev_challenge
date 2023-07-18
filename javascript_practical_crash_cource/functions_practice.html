@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions Practice</title>
+
+    <script language ="javascript" type="text/javascript">
+            function sayHello()
+            {
+                document.write("hello there!");
+            }
+
+            function fun_with_parameter(name,age){
+                if(name == "" || age == "")
+                return; // return  is used to terminate the function
+                document.write(name + " is " + age + " years old. ");
+            }
+    </script>
+
+
+
+</head>
+<body>
+    <p>Click the following button to call the function </p>
+    <form>
+        <input type="button" onclick="sayHello()" value="say hello"><br><br>
+        <input  name="txt1" placeholder="your name">
+        <input  name="txt2" placeholder="your age"><br><br>
+        <input type="button" onclick="fun_with_parameter(txt1.value , txt2.value)" value=" function with parameter ">
+    </form>
+</body>
+</html>
